@@ -31,7 +31,7 @@ func NewController(controlURL, secret, devID string) *Controller {
 	return &c
 }
 
-// returns signature, timestamp
+// Signature returns signature, timestamp
 func (c *Controller) Signature() (string, string, error) {
 	// use a static timestamp because the server doesn't check
 	timestamp := "timestamp"
